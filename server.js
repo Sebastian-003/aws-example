@@ -4,7 +4,7 @@ const app = express()
 
 app.get("/", (req, res) => res.send("<h1>Express con h1</h1>"))
 
-app.listen(3000)
+app.listen(8080)
 console.log("server on port 3000")
 
 
@@ -22,3 +22,6 @@ console.log("server on port 3000")
 //y si vuelvo a ejecutar ps -a ya no va aparecer esa ejecucion
 
 //etse comando desde visual git diff server.js se usa para ver lo que se ha modificado al momento de hacer un commit volverlo a guardar lo modificado
+
+//desde la consola ubuntu aws git pull se usa para ver los cambios por ejemplo de un commit que hice desde server.js y quiero ver los cambios en aws y
+//despues vuelvo a ejecutar con el comando npm start
