@@ -5,7 +5,7 @@ const app = express()
 app.get("/", (req, res) => res.send("<h1>Express con h1</h1>"))
 
 app.listen(8080)
-console.log("server on port 3000")
+console.log("server on port 8080")
 
 
 //el package json es una lista de los modulos que necesita nuestra app osea 
@@ -25,3 +25,11 @@ console.log("server on port 3000")
 
 //desde la consola ubuntu aws git pull se usa para ver los cambios por ejemplo de un commit que hice desde server.js y quiero ver los cambios en aws y
 //despues vuelvo a ejecutar con el comando npm start
+
+//git pull comando aws para traer los cambios
+
+
+//este comando aws ubuntu redireccionar todo lo que se ejecute en el puertob 8080 al puerto 80
+//voy a poder visitar la app tanto en el puerto 80 como en el 8080
+
+//sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
